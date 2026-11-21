@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from '@/assets/logo-icon-white.svg'
 import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { Loader2 } from 'lucide-vue-next'
@@ -40,9 +41,7 @@ async function submit() {
   <div class="grid min-h-full lg:grid-cols-[1.05fr_1fr]">
     <div class="relative hidden overflow-hidden bg-ink p-12 text-white lg:flex lg:flex-col">
       <div class="flex items-center gap-2.5">
-        <span class="grid size-9 place-items-center rounded-lg bg-gold/15 text-gold">
-          <svg viewBox="0 0 32 32" class="size-5" aria-hidden="true"><path d="M18.5 5 9 18h6l-1.5 9L23 14h-6l1.5-9Z" fill="currentColor" /></svg>
-        </span>
+        <img :src="logo" alt="" class="size-9 shrink-0" />
         <span class="text-lg font-bold">Zenerlink <span class="text-gold">Vends</span></span>
       </div>
       <div class="mt-auto max-w-md">

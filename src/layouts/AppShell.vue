@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import logo from '@/assets/logo-icon-white.svg'
 import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ChevronDown, FlaskConical, LogOut, Menu, PanelLeftClose, PanelLeftOpen, Radio, X } from 'lucide-vue-next'
@@ -43,9 +44,7 @@ async function signOut() {
     >
       <div class="flex h-16 shrink-0 items-center justify-between gap-2 px-5">
         <RouterLink :to="home" class="flex min-w-0 items-center gap-2.5">
-          <span class="grid size-8 shrink-0 place-items-center rounded-lg bg-gold/15 text-gold">
-            <svg viewBox="0 0 32 32" class="size-5" aria-hidden="true"><path d="M18.5 5 9 18h6l-1.5 9L23 14h-6l1.5-9Z" fill="currentColor" /></svg>
-          </span>
+          <img :src="logo" alt="" class="size-8 shrink-0" />
           <span v-if="!collapsed || mobileOpen" class="truncate leading-tight">
             <span class="block text-[15px] font-bold text-white">Zenerlink</span>
             <span class="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Vends</span>
