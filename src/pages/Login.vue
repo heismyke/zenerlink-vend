@@ -41,7 +41,7 @@ async function submit() {
   <div class="grid min-h-full lg:grid-cols-[1.05fr_1fr]">
     <div class="relative hidden overflow-hidden bg-ink p-12 text-white lg:flex lg:flex-col">
       <div class="flex items-center gap-2.5">
-        <img :src="logo" alt="" class="size-9 shrink-0" />
+        <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-white/[0.08] ring-1 ring-white/10"><img :src="logo" alt="" class="size-6" /></span>
         <span class="text-lg font-bold">Zenerlink <span class="text-gold">Vends</span></span>
       </div>
       <div class="mt-auto max-w-md">
