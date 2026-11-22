@@ -44,7 +44,7 @@ async function signOut() {
     >
       <div class="flex h-16 shrink-0 items-center justify-between gap-2 px-5">
         <RouterLink :to="home" class="flex min-w-0 items-center gap-2.5">
-          <span class="grid size-9 shrink-0 place-items-center rounded-xl bg-white/[0.08] ring-1 ring-white/10"><img :src="logo" alt="" class="size-5" /></span>
+          <span class="grid size-9 shrink-0 place-items-center rounded-xl bg-white/[0.08] ring-1 ring-white/10"><img :src="logo" alt="" class="h-4 w-6 object-contain" /></span>
           <span v-if="!collapsed || mobileOpen" class="truncate leading-tight">
             <span class="block text-[15px] font-bold text-white">Zenerlink</span>
             <span class="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Vends</span>
